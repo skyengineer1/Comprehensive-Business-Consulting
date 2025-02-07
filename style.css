@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----NAVBAR-----*/
+
+.logo {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.navbar-nav li {
+    padding: 0 1em;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: underline white;
+    text-underline-offset: 0.5em;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav li a:hover {
+    color: white;
+}
+
+.btn {
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: tomato;
+    color: white;
+    border: 2px solid tomato;
+}
+
+.btn:active {
+    background-color: rgba(255, 99, 71, 0.9) !important;
+    color: white;
+    border: 2px solid tomato !important;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    padding-left: 2em;
+    padding-right: 2em;
+    background: linear-gradient(to bottom, rgb(255, 123, 100), rgb(255, 152, 134));
+    color: white;
+}
+
+/*-----HOME-----*/
+
+#home {
+    background-image: url(images/home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    color: white;
+    margin-left: 3em;
+    line-height: 3;
+    max-width: 100%;
+    height: auto;
+}
+
+.home-header {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px tomato;
+}
+
+.home-description {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px tomato;
+}
+
+.home-button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 0 1em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: rgba(255, 99, 71, 0.9);
+}
+
+.home-button:active {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+/*-----Solutions-----*/
+
+#solutions {
+    padding: 2em 5em;
+    background-color: rgb(237, 246, 249);
+}
+
+.solutions-header {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.solutions-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.solutions-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background-color: white;
+    max-width: 100%;
+    height: auto;
+    padding: 3em 1em;
+}
+
+.solutions-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.fa-solid {
+    font-size: 2em;
+}
+
+.solutions-title {
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.learn-more {
+    text-decoration: 2px underline tomato;
+    text-underline-offset: 0.5em;
+}
+
+.solutions-bottom {
+    cursor: pointer;
+}
+
+#services {
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.left-side-services {
+    flex-basis: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.left-side-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+
+.services-description {
+    text-align: justify;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.services-description {
+    max-width: 25rem;
+}
+
+.right-side-services {
+    flex-basis: 50%;
+}
+
+.services-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.services-button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    width: 50%;
+    margin: auto;
+    padding: 1em 2em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.services-button:hover {
+    background-color: rgba(255, 99, 71, 0.9);
+}
+
+.services-button:active {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+.services-header {
+    font-weight: bold;
+    font-size: 4rem;
+    max-width: 8em;
+    line-height: 1;
+}
+
+/*-----Consulting-----*/
+
+#consulting {
+    padding: 5em 10em;
+    max-width: 90%;
+    margin: auto;
+}
+
+.consulting-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.consulting-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-top: 2px solid lightgray;
+    padding: 2em 0;
+}
+
+.consulting-description {
+    max-width: 25em;
+}
+
+.learn-more-black {
+    text-decoration: 2px underline rgba(75, 75, 75, 0.7);
+    text-underline-offset: 0.5em;
+}
+
+/*-----MEDIA-----*/
+
+@media only screen and (max-width: 1070px) {
+    .navbar-nav {
+      visibility: hidden;
+    }
+
+    .home-text {
+        line-height: 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-text {
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home-text {
+        display: none;
+    }
+
+    .services-button {
+        padding: 0.5em 1em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .solutions-container {
+        grid-template-columns: 1fr;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #services {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-side-services {
+        text-align: center;
+    }
+
+    .services-header {
+        font-size: 2rem;
+        max-width: 30em;
+        padding: 1em 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .consulting-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .consulting-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+}
